@@ -41,7 +41,7 @@
 </div>
 <div align="center"> 
   <samp>
-<h1> <a href="https://discord.gg/tk6uZVaDyA">👉🏾「 Join to download 」 </a></div></p>
+<h1> <a href="https://discord.gg/VBaWjA2Vm9">👉🏾「 Join to download 」 </a></div></p>
    </a><samp>
      <samp>
     <div align="center">
