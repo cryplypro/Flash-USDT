@@ -63,7 +63,7 @@
 # ${{\color{Red}\Huge{\textsf{🫱🏻‍🫲🏽Message me if you\ need help:\ \}}}}\$
 
 <p align="left">
-  <img src="https://readme-typing-svg.demolab.com/?lines=I+am+Rin™;&font=Fira%20Code&left=true&width=180&height=28&duration=4000&pause=1000" alt="Example Usage - README Typing SVG">
+  <img src="https://readme-typing-svg.demolab.com/?lines=I+am+Rin™;&font=Fira%20Code&left=true&width=150&height=29&duration=4000&pause=1000" alt="Example Usage - README Typing SVG">
 </p>
 
 ## ${{\color{DarkCyan}\Huge{\textsf{✥Discord:\""\ \}}}}\$  https://discord.com/users/tingting.dollar "Support and consultancy 24/24"
