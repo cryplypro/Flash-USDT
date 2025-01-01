@@ -1,7 +1,6 @@
 # Contributing to [Flash-USDT]
 
 Cảm ơn bạn đã quan tâm đến việc đóng góp cho dự án này! Dưới đây là một số hướng dẫn giúp bạn dễ dàng tham gia vào quá trình phát triển.
-
 ## Quy Trình Đóng Góp
 
 1. **Fork** dự án này.
