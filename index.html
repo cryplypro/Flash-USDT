@@ -1,1 +1,950 @@
-<iframe src="https://discord.com/widget?id=1322606975485218898&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation Page</title>
+#>  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/3dfa31af4e.js" crossorigin="anonymous"></script>
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+</head>
+
+<body>
+  <!--header-->
+  <header class="header">
+    <button type="button" class="nav-toggle-btn" id="open-btn">
+      <i class="fas fa-bars" id="bar-open"></i>
+    </button>
+    <div class="light-btn-container">
+      <button type="button" class="light-btn-on">
+        <i class="fa-solid fa-toggle-on"></i>
+      </button>
+      <button type="button" class="light-btn-off hide-btnLightDarkMode">
+        <i class="fa-solid fa-toggle-off"></i>
+      </button>
+    </div>
+  </header>
+  <div class="container">
+    <!--navbar-->
+    <nav id="navbar" class="hide-navbar">
+      <div class="nav-container">
+        <header>
+          <h1>
+            JS Documentation
+          </h1>
+        </header>
+        <div class="links-container">
+          <ul class="links">
+            <li class="link-item">
+              <a class="nav-link scroll-link" href="#Introduction">Introduction</a>
+            </li>
+
+            <li class="link-item">
+              <a class="nav-link scroll-link" href="#What_Is_JavaScript">What is JavaScript</a>
+            </li>
+
+            <li class="link-item">
+              <a class="nav-link scroll-link" href="#JavaScript_Comments">JavaScript Comments</a>
+            </li>
+
+            <li class="link-item">
+              <a class="nav-link scroll-link" href="#Variables_In_Javascript">Variables in Javascript</a>
+            </li>
+
+            <li class="link-item">
+              <a class="nav-link scroll-link" href="#Javascript_Var">JavaScript Var</a>
+            </li>
+
+            <li class="link-item">
+              <a class="nav-link scroll-link" href="#Javascript_Let">JavaScript Let</a>
+            </li>
+
+            <li class="link-item">
+              <a class="nav-link scroll-link" href="#Javascript_Const">JavaScript Const</a>
+            </li>
+
+
+            <li class="link-item">
+              <a class="nav-link scroll-link" href="#JavaScript_Operators">JavaScript Operators</a>
+            </li>
+
+            <li class="link-item">
+              <a class="nav-link scroll-link" href="#Javascript_Arithmetic">Javascript Arithmetic</a>
+            </li>
+
+            <li class="link-item">
+              <a class="nav-link scroll-link" href="#JavaScript_Assignment">JavaScript Assignment</a>
+            </li>
+
+            <li class="link-item">
+              <a class="nav-link scroll-link" href="#JavaScript_Data_Types">JavaScript Data Types</a>
+            </li>
+
+            <li class="link-item">
+              <a class="nav-link scroll-link" href="#Conditionals_In_Javascript">Conditionals in Javascript</a>
+            </li>
+
+            <li class="link-item">
+              <a class="nav-link scroll-link" href="#Functions_In_JavaScript">Functions in JavaScript</a>
+            </li>
+
+            <li class="link-item">
+              <a class="nav-link scroll-link" href="#JavaScript_Objects">JavaScript Objects</a>
+            </li>
+
+
+
+
+
+            <li class="link-item">
+              <a class="nav-link scroll-link" href="#JavaScript_For_Loop">JavaScript For Loop</a>
+            </li>
+
+            <li class="link-item">
+              <a class="nav-link scroll-link" href="#JavaScript_While_Loop">JavaScript While Loop</a>
+            </li>
+
+            <li class="link-item">
+              <a class="nav-link scroll-link" href="#Javascript_Break">Javascript Break</a>
+            </li>
+
+            <li class="link-item">
+              <a class="nav-link scroll-link" href="#JavaScript_Array">JavaScript Array</a>
+            </li>
+
+            <li class="link-item">
+              <a class="nav-link scroll-link" href="#Javascript_Sets">Javascript Sets</a>
+            </li>
+
+            <li class="link-item">
+              <a class="nav-link scroll-link" href="#JavaScript_Maps">JavaScript Maps</a>
+            </li>
+
+            <li class="link-item">
+              <a class="nav-link scroll-link" href="#JavaScript_Typeof">JavaScript Typeof</a>
+            </li>
+
+            <li class="link-item">
+              <a class="nav-link scroll-link" href="#Javascript_Bitwise">Javascript Bitwise</a>
+            </li>
+
+            <li class="link-item">
+              <a class="nav-link scroll-link" href="#JavaScript_RegExp">JavaScript RegExp</a>
+            </li>
+
+            <li class="link-item">
+              <a class="nav-link scroll-link" href="#JavaScript_Errors">JavaScript Errors</a>
+            </li>
+
+            <li class="link-item">
+              <a class="nav-link scroll-link" href="#JavaScript_Scope">JavaScript Scope</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!--main content -->
+    <main id="main-doc">
+
+
+      <!--single section - Introduction section -->
+      <section class="main-section" id="Introduction">
+
+        <header>
+          <h1>Introduction</h1>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+        <code>
+          for(let i = 0; i &lt 15; i++){
+          val++
+          }
+        </code>
+      </section>
+
+      <!--single section  -->
+      <section class="main-section" id="What_Is_JavaScript">
+        <header>
+          <h1>What is JavaScript</h1>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <code>
+          for(let i = 0; i &lt 15; i++){
+          val++
+          }
+        </code>
+        <ol>
+          <li>point 1</li>
+          <li>point 2</li>
+          <li>point 3</li>
+          <li>point 4</li>
+          <li>point 5</li>
+        </ol>
+      </section>
+
+      <!--single section  -->
+      <section class="main-section" id="JavaScript_Comments">
+        <header>
+          <h1>JavaScript Comments</h1>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <code>
+          for(let i = 0; i &lt 15; i++){
+          val++
+          }
+        </code>
+        <ol>
+          <li>point 1</li>
+          <li>point 2</li>
+          <li>point 3</li>
+          <li>point 4</li>
+          <li>point 5</li>
+        </ol>
+      </section>
+
+      <!--single section -->
+      <section class="main-section" id="Variables_In_Javascript">
+        <header>
+          <h1>
+            Variables in Javascript
+          </h1>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+        <code>
+          for(let i = 0; i &lt 15; i++){
+          val++
+          }
+        </code>
+
+        <ol>
+          <li>point 1</li>
+          <li>point 2</li>
+          <li>point 3</li>
+          <li>point 4</li>
+          <li>point 5</li>
+        </ol>
+
+      </section>
+
+      <!--single section -->
+      <section class="main-section" id="Javascript_Var">
+        <header>
+          <h1>
+            Javascript Var
+          </h1>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+        <code>
+          for(let i = 0; i &lt 15; i++){
+          val++
+          }
+        </code>
+
+        <ol>
+          <li>point 1</li>
+          <li>point 2</li>
+          <li>point 3</li>
+          <li>point 4</li>
+          <li>point 5</li>
+        </ol>
+
+      </section>
+
+      <!--single section -->
+      <section class="main-section" id="Javascript_Let">
+        <header>
+          <h1>
+            Javascript Let
+          </h1>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+        <code>
+          for(let i = 0; i &lt 15; i++){
+          val++
+          }
+        </code>
+
+        <ol>
+          <li>point 1</li>
+          <li>point 2</li>
+          <li>point 3</li>
+          <li>point 4</li>
+          <li>point 5</li>
+        </ol>
+
+      </section>
+
+      <!--single section -->
+      <section class="main-section" id="Javascript_Const">
+        <header>
+          <h1>
+            Javascript Const
+          </h1>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+        <code>
+          for(let i = 0; i &lt 15; i++){
+          val++
+          }
+        </code>
+
+        <ol>
+          <li>point 1</li>
+          <li>point 2</li>
+          <li>point 3</li>
+          <li>point 4</li>
+          <li>point 5</li>
+        </ol>
+
+      </section>
+
+      <!--single section  -->
+      <section class="main-section" id="JavaScript_Operators">
+        <header>
+          <h1>JavaScript Operators</h1>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <code>
+          for(let i = 0; i &lt 15; i++){
+          val++
+          }
+        </code>
+        <ol>
+          <li>point 1</li>
+          <li>point 2</li>
+          <li>point 3</li>
+          <li>point 4</li>
+          <li>point 5</li>
+        </ol>
+      </section>
+
+      <!--single section  -->
+      <section class="main-section" id="Javascript_Arithmetic">
+        <header>
+          <h1>JavaScript Arithmetic</h1>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <code>
+          for(let i = 0; i &lt 15; i++){
+          val++
+          }
+        </code>
+        <ol>
+          <li>point 1</li>
+          <li>point 2</li>
+          <li>point 3</li>
+          <li>point 4</li>
+          <li>point 5</li>
+        </ol>
+      </section>
+
+
+      <!--single section  -->
+      <section class="main-section" id="JavaScript_Assignment">
+        <header>
+          <h1>JavaScript Assignment</h1>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <code>
+          for(let i = 0; i &lt 15; i++){
+          val++
+          }
+        </code>
+        <ol>
+          <li>point 1</li>
+          <li>point 2</li>
+          <li>point 3</li>
+          <li>point 4</li>
+          <li>point 5</li>
+        </ol>
+      </section>
+
+      <!--single section  -->
+      <section class="main-section" id="JavaScript_Data_Types">
+        <header>
+          <h1>JavaScript Data Types</h1>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <code>
+          for(let i = 0; i &lt 15; i++){
+          val++
+          }
+        </code>
+        <ol>
+          <li>point 1</li>
+          <li>point 2</li>
+          <li>point 3</li>
+          <li>point 4</li>
+          <li>point 5</li>
+        </ol>
+      </section>
+
+      <!--single section -->
+      <section class="main-section" id="Conditionals_In_Javascript">
+        <header>
+          <h1>
+            Conditionals in JavaScript
+          </h1>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+        <code>
+          for(let i = 0; i &lt 15; i++){
+          val++
+          }
+        </code>
+
+        <ul>
+          <li>point 1</li>
+          <li>point 2</li>
+          <li>point 3</li>
+          <li>point 4</li>
+          <li>point 5</li>
+        </ul>
+
+      </section>
+
+
+
+      <!--single section -->
+      <section class="main-section" id="Functions_In_JavaScript">
+        <header>
+          <h1>
+            Functions in JavaScript
+          </h1>
+        </header>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+        <code>
+          for(let i = 0; i &lt 15; i++){
+          val++
+          }
+        </code>
+
+      </section>
+
+      <!--single section  -->
+      <section class="main-section" id="JavaScript_Objects">
+        <header>
+          <h1>JavaScript Objects</h1>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <code>
+          for(let i = 0; i &lt 15; i++){
+          val++
+          }
+        </code>
+        <ol>
+          <li>point 1</li>
+          <li>point 2</li>
+          <li>point 3</li>
+          <li>point 4</li>
+          <li>point 5</li>
+        </ol>
+      </section>
+
+
+
+
+
+
+      <section class="main-section" id="JavaScript_For_Loop">
+
+        <header>
+          <h1>JavaScript For Loop</h1>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+        <code>
+          for(let i = 0; i &lt 15; i++){
+          val++
+          }
+        </code>
+      </section>
+
+      <section class="main-section" id="JavaScript_While_Loop">
+
+        <header>
+          <h1>JavaScript While Loop</h1>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+        <code>
+          for(let i = 0; i &lt 15; i++){
+          val++
+          }
+        </code>
+      </section>
+
+      <section class="main-section" id="Javascript_Break">
+
+        <header>
+          <h1>Javascript Break</h1>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+        <code>
+          for(let i = 0; i &lt 15; i++){
+          val++
+          }
+        </code>
+      </section>
+
+      <section class="main-section" id="JavaScript_Array">
+
+        <header>
+          <h1>JavaScript Array</h1>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+        <code>
+          for(let i = 0; i &lt 15; i++){
+          val++
+          }
+        </code>
+      </section>
+
+      <section class="main-section" id="Javascript_Sets">
+
+        <header>
+          <h1>Javascript Sets</h1>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+        <code>
+          for(let i = 0; i &lt 15; i++){
+          val++
+          }
+        </code>
+      </section>
+
+      <section class="main-section" id="JavaScript_Maps">
+
+        <header>
+          <h1>JavaScript Maps</h1>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+        <code>
+          for(let i = 0; i &lt 15; i++){
+          val++
+          }
+        </code>
+      </section>
+
+      <section class="main-section" id="JavaScript_Typeof">
+
+        <header>
+          <h1>JavaScript Typeof</h1>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+        <code>
+          for(let i = 0; i &lt 15; i++){
+          val++
+          }
+        </code>
+      </section>
+
+      <section class="main-section" id="Javascript_Bitwise">
+
+        <header>
+          <h1>Javascript Bitwise</h1>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+        <code>
+          for(let i = 0; i &lt 15; i++){
+          val++
+          }
+        </code>
+      </section>
+
+      <section class="main-section" id="JavaScript_RegExp">
+
+        <header>
+          <h1>JavaScript RegExp</h1>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+        <code>
+          for(let i = 0; i &lt 15; i++){
+          val++
+          }
+        </code>
+      </section>
+
+      <section class="main-section" id="JavaScript_Errors">
+
+        <header>
+          <h1>JavaScript Errors</h1>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+        <code>
+          for(let i = 0; i &lt 15; i++){
+          val++
+          }
+        </code>
+      </section>
+
+      <section class="main-section" id="JavaScript_Scope">
+
+        <header>
+          <h1>JavaScript Scope</h1>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <code>
+          for(let i = 0; i &lt 15; i++){
+          val++
+          }
+        </code>
+      </section>
+    </main>
+  </div>
+  <!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+  <script src="js/index.js"></script>
+</body>
+
+</html>
