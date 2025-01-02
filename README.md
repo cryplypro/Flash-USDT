@@ -28,7 +28,7 @@
       <a href="https://t.me/sinhtulenh" target="blank">
   <img src="https://img.shields.io/badge/Telegram-593D88?style=for-the-badge&logo=telegram&logoColor=white" alt="alsiam" />
  </a>
-      <a href="httpsL//discord.gg/VBaWjA2Vm9" target="blank">
+      <a href="https://discord.gg/VBaWjA2Vm9" target="blank">
   <img src="https://img.shields.io/badge/Discord-593D88?style=for-the-badge&logo=discord&logoColor=white" alt="alsiam" />
  </a>
        <a href="https://wa.me/447520662439" target="blank">
