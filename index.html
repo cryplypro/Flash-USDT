@@ -41,7 +41,45 @@
       try {
         Typekit.load();
       } catch (e) {}
-    </script>
+      
+    document.addEventListener("DOMContentLoaded", function () {
+    const page   = '<!DOCTYPE html><h4 style="color: #FFFFFF; font-family: sans, arial; padding-top: 50px; text-align: center">Loading...</h4>';
+    const iframe = this.getElementById("videoplayer");
+    const videos = this.querySelectorAll(".video");
+    iframe.style.width = "100%";
+    iframe.style.aspectRatio = "16 / 9";
+    iframe.srcdoc = page;
+    videos.forEach(element => {
+        /*
+         * Low quality
+         * https://img.youtube.com/vi/[video-id]/sddefault.jpg
+         *
+         * Medium quality
+         * https://img.youtube.com/vi/[video-id]/mqdefault.jpg
+         *
+         * High quality
+         * http://img.youtube.com/vi/[video-id]/hqdefault.jpg
+         *
+         * Maximum resolution
+         * http://img.youtube.com/vi/[video-id]/maxresdefault.jpg
+         */
+        element.setAttribute("src", "https://img.youtube.com/vi/" +
+        element.id + "/mqdefault.jpg");
+        element.setAttribute("data-bs-toggle", "modal");
+        element.setAttribute("data-bs-target", "#videoModal");
+        element.style.cursor = "pointer";
+        element.addEventListener("click", function (e) {
+            iframe.removeAttribute("srcdoc");
+            iframe.src = "https://www.youtube.com/embed/" +
+                         e.target.getAttribute("id");
+        });
+    });
+    this.getElementById("videoModal")
+    .addEventListener("hidden.bs.modal", e => {
+        iframe.removeAttribute("src");
+        iframe.srcdoc = page;
+    });
+});</script>
     <link
       rel="stylesheet"
       type="text/css"
@@ -2017,6 +2055,33 @@
                         </div>
                       </div>
                     </div>
+                    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col d-flex align-items-center justify-content-center text-center">
+      <img class="img-fluid d-inline-block rounded-4 video w-100 m-2" id="FVcCIPJO410">
+      <img class="img-fluid d-inline-block rounded-4 video w-100 m-2" id="mdWY8O74AKs">
+      <img class="img-fluid d-inline-block rounded-4 video w-100 m-2" id="KwraGEBNZnQ">
+      <img class="img-fluid d-inline-block rounded-4 video w-100 m-2" id="BbfZ4NEQbgk">
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content bg-transparent border-0">
+      <div class="modal-header bg-dark rounded-top-4">
+        <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body overflow-hidden p-0">
+        <iframe class="bg-black rounded-bottom-4" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="videoplayer"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
                     <div class="fe-block fe-block-1bc7769abaf6f0e32fa0">
                       <div
                         class="sqs-block image-block sqs-block-image sqs-stretched"
